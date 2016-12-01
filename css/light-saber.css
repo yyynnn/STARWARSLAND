@@ -105,7 +105,7 @@
 
 .yoda {
 	background-color:#81ff77; /* Old browsers */
-background: -webkit-linear-gradient(left, rgb(2, 244, 20) 0%,rgb(2, 245, 19) 30%,rgb(0, 255, 42) 50%,rgb(254,254,254) 70%,rgb(2, 245, 19) 100%); /* IE6-9 */
+background: -webkit-linear-gradient(left, rgb(2, 244, 20) 0%,rgb(2, 245, 19) 30%,rgb(0, 255, 42) 50%,rgb(0, 255, 42) 70%,rgb(2, 245, 19) 100%); /* IE6-9 */
 	animation-name: yoda;
 	-moz-animation-name: yoda;
 	-webkit-animation-name: yoda;
@@ -125,13 +125,13 @@ background: -webkit-linear-gradient(left, rgb(2, 244, 20) 0%,rgb(2, 245, 19) 30%
 
 
 /* Animations */
-@keyframes yoda {
-	from { box-shadow: 0 0 10px #7EC855; }
-	50% { box-shadow: 0 0 16px #7EC855; }
-	to { box-shadow: 0 0 10px #7EC855; }
-}
 @-webkit-keyframes yoda {
-	from { box-shadow: 0 0 10px #7EC855; }
-	50% { box-shadow: 0 0 16px #7EC855; }
-	to { box-shadow: 0 0 10px #7EC855; }
+	from { box-shadow: 0 0 10px #7dff87; }
+	50% { box-shadow: 0 0 16px #00ff89; }
+	to { box-shadow: 0 0 10px #7dff87; }
+}
+@keyframes yoda {
+	from { box-shadow: 0 0 10px #7dff87; }
+	50% { box-shadow: 0 0 16px #00ff89; }
+	to { box-shadow: 0 0 10px #7dff87; }
 }
