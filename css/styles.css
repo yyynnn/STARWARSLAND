@@ -352,7 +352,8 @@ padding-right: 60px!important;
 
 .button-custom {
     font-weight: 600;
-    padding: 18px 23px 42px;
+    height: 60px!important;
+    padding: 13px 23px 13px;
     -webkit-transition: .3s all ease;
     transition: .3s all ease;
     border: none!important;
@@ -983,8 +984,8 @@ html.vex-open {
 
 #sc5-path{    
     position: absolute;
-left: 41%;
-    top: 43%;
+left: 42%;
+    top: 45%;
     -webkit-transform: translateY(-50%) translateX(-50%) rotate(0deg);
     transform: translateY(-50%) translateX(-50%) rotate(0deg);
     z-index: 2;
