@@ -9,37 +9,38 @@
     <link href="css/bulma.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/starsbg.css"> 
+<link rel="stylesheet" href="css/starsbg.css">
     </head>
 
 <body>
         <section class="section blue-bg white-text" id="section1">
             <div class="container">
                 <div class="hide-sc1 columns level">
-                    <div class="column is-4 level-left is-hh"> <img src="images/cbs-logo.png" alt="cbs-logo.png"> </div>
+                    <div class="column is-4 level-left is-hh"> <img src="./images/cbs-logo.png" alt="cbs-logo.png"> </div>
                     <div class="column is-7 has-text-right level-right is-hh">
                         <div class="is-hh-orange"><span class="orange-bg def-padding level-item black-text">Специальное предложение только для пользователей
               </span></div>
                     </div>
-                    <div class="column is-1 level-right has-text-right is-hh"><img src="images/hh-logo.png" alt="hh-logo.png"></div>
+                    <div class="column is-1 level-right has-text-right is-hh"><img src="./images/hh-logo.png" alt="hh-logo.png"></div>
                 </div>
                 <div class="columns has-text-centered is-multiline is-desktop">
                     <div class="column is-12">
                         <h1 class="fw600 hide-sc1">Курс «Управление карьерной стратегией»</h1> </div>
-                    <div class="column is-12 hide-sc1">
-                        <h5>Инструменты и технологии постановки целей и построения успешной карьеры.</h5> </div>
+                    <div class="column is-12 hide-sc1"> 
+                                    <h5>Инструменты и технологии постановки целей и построения успешной карьеры.</h5>
+                    </div>
                 </div>
                 <div class="tile is-ancestor">
                     <div class="tile is-vertical is-7-tablet is-8-desktop">
                         <div class="tile">
                             <div class="tile is-parent is-vertical">
                                 <article class="tile is-child is-hidden-mobile"> 
-                                <img class="hide-sc1" src="images/x-wing.png" alt="x-wing.png" id="xwing"> 
-                                <img class="hide-sc1" src="images/rock-top.png" alt="rock-top" id="rock-top"> 
-                                <img class="hide-sc1" src="images/rock-left.png" alt="rock-left" id="rock-left"> 
-                                <img class="hide-sc1" src="images/rock-right-1.png" alt="rock-right-1" id="rock-right-1"> 
-                                <img class="hide-sc1" src="images/rock-right-2.png" alt="rock-right-2" id="rock-right-2"> 
-                                <img class="hide-sc1" src="images/rock-bot-right.png" alt="rock-bot-right" id="rock-bot-right"> </article>
+                                <img class="hide-sc1" src="./images/x-wing.png" alt="x-wing.png" id="xwing"> 
+                                <img class="hide-sc1" src="./images/rock-top.png" alt="rock-top" id="rock-top"> 
+                                <img class="hide-sc1" src="./images/rock-left.png" alt="rock-left" id="rock-left"> 
+                                <img class="hide-sc1" src="./images/rock-right-1.png" alt="rock-right-1" id="rock-right-1"> 
+                                <img class="hide-sc1" src="./images/rock-right-2.png" alt="rock-right-2" id="rock-right-2"> 
+                                <img class="hide-sc1" src="./images/rock-bot-right.png" alt="rock-bot-right" id="rock-bot-right"> </article>
                             </div>
                             <div class="hide-sc1 tile is-parent is-vertical Aligner-item--bottom is-hh">
                                 <article class="tile is-child content">
@@ -52,7 +53,7 @@
                                     <h2 style="font-size:30px;">18 900 руб.</h2> </article>
                             </div>
                             <div class="tile is-parent  Aligner-item--bottom">
-                                <article class="hide-sc1 tile is-child has-text-centered is-hidden-touch padding-r60"> <img src="images/jedi.png" alt="jedi.png" id="jedi">
+                                <article class="hide-sc1 tile is-child has-text-centered is-hidden-touch padding-r60"> <img src="./images/jedi.png" alt="jedi.png" id="jedi">
                                     <div class="lightsaber">
                                         <label for="yoda-example"></label>
                                         <input type="checkbox" id="yoda-example" checked="checked">
@@ -66,22 +67,40 @@
                     <div class="tile is-parent">
                         <article class="tile is-child">
                             <div class="">
-                                <div class="hide-sc1 custom-form has-text-centered white-bg">
+                                <form class="hide-sc1 custom-form-1 custom-form has-text-centered white-bg"  onsubmit="showflip(this);">
+                                   <div class="success-form-1 success-form has-text-left">
+                                   
+                                     <img src="./images/sc7-stars.png" alt="" class="sc7-stars">
+                                    <div class="success-content">  
+                                     <img src="./images/star.png" alt="" class="sc5-star1 sc5-star">
+                                      <img src="./images/star.png" alt="" class="sc5-star2 sc5-star"> 
+                                      <img src="./images/star.png" alt="" class="sc5-star3 sc5-star">  
+                                                                          
+                                      
+                                       <h1 class="fs30 fw700 margin-b20">Спасибо, ваша <br> заявка принята!</h1>
+                                       <h2 class="margin-b40">Проверьте e-mail <br>
+                                       и подтвердите вашу <br>
+                                       заявку</h2>
+               <div class="has-text-centered"><img src="./images/envelope.png" alt=""></div>                
+                               </div>
+                                
+                                   </div>
                                     <h2 class="black-text fw600 margin-b20">Регистрация на курс</h2>
                                     <p class="control">
-                                        <input class="input is-large" type="text" placeholder="Имя"> </p>
+                                        <input name="mane" class="input is-large" type="text" placeholder="Имя" required> </p>
                                     <p class="control">
-                                        <input class="input is-large" type="text" placeholder="Телефон"> </p>
+                                        <input class="input is-large" type="text" placeholder="Телефон" required> </p>
                                     <p class="control">
-                                        <input class="input is-large" type="text" placeholder="E-mail"> </p>
+                                        <input class="input is-large" type="email" id="email" name="email" required placeholder="E-mail"> </p>
                                     <p class="control">
                                         <br> </p>
                                     <p class="control">
                                         <input class="input is-large" type="text" placeholder="Введите промокод"> </p>
                                     <h6 class="gray-text"><b>Стоимость курса 19 900 руб.</b></h6>
                                     <h6 class="black-text margin-b20"><strong>По промо-коду 0 руб.</strong></h6>
-                                    <p class="control"> <a class="button button-custom is-medium orange-bg white-text">Начать обучение</a> </p>
-                                </div>
+                                    <p class="control"> 
+                                    <button type="submit" class="button button-custom is-medium orange-bg white-text">Начать обучение</button></p>
+                                </form>
                             </div>
                         </article>
                     </div>
@@ -118,34 +137,36 @@
                         <h1 style="font-size:30px; color:#1b1b1b;" class="fw700 transition hide">Когда нужен курс «Управление карьерой»?</h1> </div>
                 </div>
                 <div class="columns has-text-centered is-multiline is-mobile hide">
-                    <div class="column is-6-mobile is-3-desktop text-wrap Aligner"> <img src="images/wallet-icon.png" alt="">
+                    <div class="column is-6-mobile is-3-desktop text-wrap Aligner"> <img src="./images/wallet-icon.png" alt="">
                         <p> Ваша зарплата не растет
                             <br>и не радует вас </p>
                     </div>
-                    <div class="column is-6-mobile is-3-desktop text-wrap Aligner"> <img src="images/smile-icon.png" alt="">
+                    <div class="column is-6-mobile is-3-desktop text-wrap Aligner"> <img src="./images/smile-icon.png" alt="">
                         <p class=""> Работа не приносит
                             <br> радости и удовольствия </p>
                     </div>
-                    <div class="column is-6-mobile is-3-desktop text-wrap Aligner"> <img src="images/chair-logo.png" alt="">
+                    <div class="column is-6-mobile is-3-desktop text-wrap Aligner"> <img src="./images/chair-logo.png" alt="">
                         <p> Не знаете, как увеличить
                             <br>свою ценность и зарплату
                             <br>на текущем месте работы </p>
                     </div>
-                    <div class="column is-6-mobile is-3-desktop text-wrap Aligner"> <img src="images/cross-icon.png" alt="">
+                    <div class="column is-6-mobile is-3-desktop text-wrap Aligner"> <img src="./images/cross-icon.png" alt="">
                         <p> Вы зашли в тупик,
                             <br>не понимаете куда &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             <br>идти дальше </p>
                     </div>
                 </div>
                 <div class="columns has-text-centered">
-                    <div class="column is-6 hide"><img src="images/nohead.png" alt=""></div>
+                    <div class="column is-6 hide"><img src="./images/nohead.png" alt=""></div>
                     <div class="column is-6 has-text-left Aligner flex-column">
                         <div class="flex-align-left">
                             <h2 class="margin-b40 fw300 hide">Курс подходит для всех позиций <br>
                   от линейных специалистов <br>
                   до топ-менеджеров, которым не <br>
                   всё равно на себя и свой успех.  </h2> </div>
-                        <div class="flex-align-left hide"> <a class="button button-custom is-medium orange-bg white-text">Начать обучение</a> </div>
+                        <div class="flex-align-left hide"> 
+                        <a href="#reg-form" data-scroll class="button button-custom is-medium orange-bg white-text" style="padding: 28px 14px 30px;">Начать обучение</a> 
+                        </div>
                     </div>
                 </div>
             </div>
@@ -153,7 +174,7 @@
         <!--______________________________SC END______________________________________-->
         <section class="section blue-bg" id="section3">
             <div class="container">
-                <img class="hide-noreset" src="images/dash-road.png" alt="dash-road.png" id="dash-road">
+                <img class="hide-noreset" src="./images/dash-road.png" alt="dash-road.png" id="dash-road">
                 <div class="hide columns margin-b90">
                     <div class="column has-text-centered">
                         <h1 style="font-size:30px;" class="fw700">Как устроен курс? </h1>
@@ -162,8 +183,8 @@
                 <div class=" hide columns margin-b120">
                     <div class="column is-4-desktop has-text-centered">
                         <div class="sc3-images" style="height: 220px;margin: auto;"> 
-                        <img src="images/sc3-icon-1-gsaber.png" alt="sc3-icon-1-gsaber" id="sc3-icon-1-gsaber"> 
-                        <img src="images/sc3-icon-1-rsaber.png" alt="sc3-icon-1-rsaber" id="sc3-icon-1-rsaber"> </div>
+                        <img src="./images/sc3-icon-1-gsaber.png" alt="sc3-icon-1-gsaber" id="sc3-icon-1-gsaber"> 
+                        <img src="./images/sc3-icon-1-rsaber.png" alt="sc3-icon-1-rsaber" id="sc3-icon-1-rsaber"> </div>
                     </div>
                     <div class="column is-6-desktop">
                         <h2 class=" fw700">Самоопределение</h2>
@@ -177,7 +198,7 @@
                 </div>
                 <div class=" hide columns margin-b120">
                     <div class="column is-6-desktop has-text-centered">
-                        <div class="sc3-images" style="height: 225px;margin: auto;"> <img src="images/sc3-icon-2-stars.png" alt="sc3-icon-2-stars" id="sc3-icon-2-stars"> <img src="images/sc3-icon-2.png" alt="sc3-icon-2" id="sc3-icon-2"> <img src="images/sc3-icon-2-black.png" alt="sc3-icon-2" id="sc3-icon-2-black"> </div>
+                        <div class="sc3-images" style="height: 225px;margin: auto;"> <img src="./images/sc3-icon-2-stars.png" alt="sc3-icon-2-stars" id="sc3-icon-2-stars"> <img src="./images/sc3-icon-2.png" alt="sc3-icon-2" id="sc3-icon-2"> <img src="./images/sc3-icon-2-black.png" alt="sc3-icon-2" id="sc3-icon-2-black"> </div>
                     </div>
                     <div class="column is-6-desktop">
                         <h2 class=" fw700 pad">Анализ возможностей <br>и стратегия роста</h2>
@@ -190,10 +211,10 @@
                 </div>
                 <div class="hide columns margin-b120">
                     <div class="column is-6-desktop">
-                        <div class="sc3-images" style="height: 267px;width: 300px;margin: auto;"> <img src="images/sc3-icon-3-ship.png" alt="sc3-icon-3-ship" id="sc3-icon-3-ship"> <img src="images/sc3-icon-3-planet.png" alt="sc3-icon-3-planet" id="sc3-icon-3-planet"> </div>
+                        <div class="sc3-images" style="height: 267px;width: 300px;margin: auto;"> <img src="./images/sc3-icon-3-ship.png" alt="sc3-icon-3-ship" id="sc3-icon-3-ship"> <img src="./images/sc3-icon-3-planet.png" alt="sc3-icon-3-planet" id="sc3-icon-3-planet"> </div>
                     </div>
                     <div class="column is-6-desktop flex-align-left">
-                        <h2 class=" fw300">Разработка карьерного плана</h2>
+                        <h2 class=" fw700">Разработка карьерного плана</h2>
                         <h5 class=" fw300">
 Вы определите ключевые компетенции <br>
 и промежуточные цели, которые приведут <br>
@@ -204,10 +225,10 @@
                 </div>
                 <div class="hide columns is-multiline">
                     <div class="column is-offset-2-desktop is-4-desktop has-text-centered">
-                        <div class="sc3-images" style="height: 267px;margin: auto;"> <img src="images/sc3-icon-4-man.png" alt="sc3-icon-4-man" id="sc3-icon-4-man"> <img src="images/sc3-icon-4-rocks.png" alt="sc3-icon-1-rsaber" id="sc3-icon-4-rocks"> </div>
+                        <div class="sc3-images" style="height: 267px;margin: auto;"> <img src="./images/sc3-icon-4-man.png" alt="sc3-icon-4-man" id="sc3-icon-4-man"> <img src="./images/sc3-icon-4-rocks.png" alt="sc3-icon-1-rsaber" id="sc3-icon-4-rocks"> </div>
                     </div>
                     <div class="column is-6-desktop flex-align-left">
-                        <h2 class=" fw300">Реализация и подведение итогов</h2>
+                        <h2 class=" fw700">Реализация и подведение итогов</h2>
                         <h5 class=" fw300">
                  Вы научитесь не просто ставить планировать, <br>
                  а достигать результатов и отслеживать свой <br>
@@ -224,25 +245,43 @@
                         <div class=" hide orange-border-div">
                             <h1 class="hide fw700 orange-text-main margin-b40">Не откладывайте <br>свою карьеру на завтра, <br>вступитена путь роста <br>прямо сейчас!</h1>
                             <div>
-                                <h2 class="fw300 hide">   Старт курса: 1 февраля <span><img src="images/line-arrow.png" alt="" class="arrow-orange"></span></h2> </div>
+                                <h2 class="fw300 hide">   Старт курса: 1 февраля <span><img src="./images/line-arrow.png" alt="" class="arrow-orange"></span></h2> </div>
                         </div>
                     </div>
                     <div class="column" style="padding-right:0; padding-left:0;">
-                        <div class="hide custom-form has-text-centered white-bg">
-                            <h2 class="black-text fw600 margin-b20 hide">Регистрация на курс</h2>
-                            <p class="control">
-                                <input class="input is-large" type="text" placeholder="Имя"> </p>
-                            <p class="control">
-                                <input class="input is-large" type="text" placeholder="Телефон"> </p>
-                            <p class="control">
-                                <input class="input is-large" type="text" placeholder="E-mail"> </p>
-                            <p class="control">
-                                <br> </p>
-                            <p class="control">
-                                <input class="input is-large" type="text" placeholder="Введите промокод"> </p>
-                            <h6 class="gray-text"><b>Стоимость курса 19 900 руб.</b></h6>
-                            <h6 class="black-text margin-b20"><strong>По промо-коду 0 руб.</strong></h6> 
-                            <a class="hide button button-custom is-medium orange-bg white-text">Начать обучение</a> </div>
+                       <form class="hide custom-form-2 custom-form has-text-centered white-bg">
+                                   <div class="success-form-2 success-form has-text-left">
+                                   
+                                     <img src="./images/sc7-stars.png" alt="" class="sc7-stars">
+                                    <div class="success-content">  
+                                     <img src="./images/star.png" alt="" class="sc5-star1 sc5-star">
+                                      <img src="./images/star.png" alt="" class="sc5-star2 sc5-star"> 
+                                      <img src="./images/star.png" alt="" class="sc5-star3 sc5-star">  
+                                                                          
+                                      
+                                       <h1 class="fs30 fw700 margin-b20">Спасибо, ваша <br> заявка принята!</h1>
+                                       <h2 class="margin-b40">Проверьте e-mail <br>
+                                       и подтвердите вашу <br>
+                                       заявку</h2>
+               <div class="has-text-centered"><img src="./images/envelope.png" alt=""></div>                
+                               </div>
+                                
+                                   </div>
+                                    <h2 class="black-text fw600 margin-b20">Регистрация на курс</h2>
+                                    <p class="control">
+                                        <input name="mane" class="input is-large" type="text" placeholder="Имя" required> </p>
+                                    <p class="control">
+                                        <input class="input is-large" type="text" placeholder="Телефон" required> </p>
+                                    <p class="control">
+                                        <input class="input is-large" type="email" id="email" name="email" required placeholder="E-mail"> </p>
+                                    <p class="control">
+                                        <br> </p>
+                                    <p class="control">
+                                        <input class="input is-large" type="text" placeholder="Введите промокод"> </p>
+                                    <h6 class="gray-text"><b>Стоимость курса 19 900 руб.</b></h6>
+                                    <h6 class="black-text margin-b20"><strong>По промо-коду 0 руб.</strong></h6>
+                                    <p class="control"> 
+                                        <button type="submit" class="button button-custom is-medium orange-bg white-text">Начать обучение</button></p></form>
                     </div>
                 </div>
             </div>
@@ -255,7 +294,7 @@
                         <h1 style="font-size:30px;" class="fw700 hide">Как проходит обучение? </h1> </div>
                 </div>
                 <div class="columns margin-b90">
-                    <div class="column is-4-desktop has-text-centered is-hidden-desktop is-hidden-tablet hide"><img src="images/laptop.png" alt="" id="laptop"></div>
+                    <div class="column is-4-desktop has-text-centered is-hidden-desktop is-hidden-tablet hide"><img src="./images/laptop.png" alt="" id="laptop"></div>
                     <div class="hide column is-6-desktop Aligner">
                         <div>
                             <h4 class="fw700">Дистанционный формат</h4>
@@ -266,10 +305,10 @@
                   лишь бы был интернет! 
               </h5></div>
                     </div>
-                    <div class="hide column is-4-desktop has-text-centered is-hidden-mobile"><img src="images/laptop.png" alt=""></div>
+                    <div class="hide column is-4-desktop has-text-centered is-hidden-mobile"><img src="./images/laptop.png" alt=""></div>
                 </div>
                 <div class="hide columns margin-b90">
-                    <div class="column is-6-desktop has-text-centered"><img src="images/clock.png" alt=""></div>
+                    <div class="column is-6-desktop has-text-centered"><img src="./images/clock.png" alt=""></div>
                     <div class="column is-4-desktop Aligner">
                         <div>
                             <h4 class="fw700">Акцент на практику</h4>
@@ -281,7 +320,7 @@
                     </div>
                 </div>
                 <div class="hide columns margin-b90">
-                    <div class="column is-4-desktop has-text-centered is-hidden-desktop is-hidden-tablet"><img src="images/conversation.png" alt=""></div>
+                    <div class="column is-4-desktop has-text-centered is-hidden-desktop is-hidden-tablet"><img src="./images/conversation.png" alt=""></div>
                     <div class="column is-6-desktop Aligner">
                         <div>
                             <h4 class="fw700">Общение</h4>
@@ -291,10 +330,10 @@
 и обсуждать вопросы по курсу.
               </h5></div>
                     </div>
-                    <div class="column is-4-desktop has-text-centered is-hidden-mobile"><img src="images/conversation.png" alt=""></div>
+                    <div class="column is-4-desktop has-text-centered is-hidden-mobile"><img src="./images/conversation.png" alt=""></div>
                 </div>
                 <div class="hide columns margin-b90">
-                    <div class="column is-6-desktop has-text-centered"><img src="images/cert.png" alt=""></div>
+                    <div class="column is-6-desktop has-text-centered"><img src="./images/cert.png" alt=""></div>
                     <div class="column is-4-desktop Aligner has-text-left">
                         <div>
                             <h4 class="fw700">Сертификат</h4>
@@ -314,12 +353,12 @@
         <section class="section white-text section5" id="section5">
                <div id="sc5-ship-wrap">  
                <div id="sc5-ship-whole">
-               <img src="images/sc5-ship.png" alt="sc5-ship" id="sc5-ship">
-               <img src="images/sc5-ship-plasma.png" alt="sc5-ship-plasma" id="sc5-ship-plasma">
+               <img src="./images/sc5-ship.png" alt="sc5-ship" id="sc5-ship">
+               <img src="./images/sc5-ship-plasma.png" alt="sc5-ship-plasma" id="sc5-ship-plasma">
                </div>
                
                </div>
-                <div class="stars">
+                <div class="hide-noreset stars">
   <div class="container">
     <div class="star"></div>
   </div>
@@ -623,24 +662,23 @@
 </div>              
               <div class="container">  
                 <div class="columns is-multiline">
-
-             <img src="images/sc5-plan.png" alt="" id="sc5-plan">
+                <img src="./images/sc5-plan.png" alt="" id="sc5-plan">
         
-                 <a href="" class="sc5-cert clocks">
-                     <img src="images/sc5-cert-mult.png" alt="" id="sc5-cert-mult">
-                     <img src="images/sc5-sert-overlay.png" alt="" id="sc5-sert-overlay">
-                     <img src="images/sc5-cert-bg.png" alt="" id="sc5-cert-bg">
-                 </a>
+                 <div class="sc5-cert" id="showcert">
+                     <img src="./images/sc5-cert-mult.png" alt="" id="sc5-cert-mult">
+                     <img src="./images/sc5-sert-overlay.png" alt="" id="sc5-sert-overlay">
+                     <img src="./images/sc5-cert-bg.png" alt="" id="sc5-cert-bg">
+                 </div>
        
                     
              
-                   <img src="images/path.png" alt="" id="sc5-path">
-<!--               <div id="sc5-void-wrap"><img src="images/void.svg" alt="sc5-icon-1" id="sc5-icon-1-black"></div>-->
-                   <!--<img src="images/star.png" alt="" id="sc5-star1" class="sc5-star">-->
+                   <img src="./images/path.png" alt="" id="sc5-path">
+
+                  
                     <div class="column is-12 padding-t40 has-text-centered">
-                        <h1 class="fw700 fs30 white-text margin-b90">Что в результате?</h1> </div>
+                        <h1 class="hide fw700 fs30 white-text margin-b90">Что в результате?</h1> </div>
                     <div class="column is-8 margin-b40"></div>
-                    <div class="column is-4 margin-b40">
+                    <div class="hide column is-4 margin-b40">
                         <h5><b>3-й месяц</b></h5>
                         <p>
                             Вы улучшили свои профессиональные <br>
@@ -650,51 +688,52 @@
                             </p>
                     </div>
                     <div class="column is-7 margin-b40"></div>
-                    <div class="column is-5 margin-b40">
+                    <div class="hide column is-5 margin-b40">
                         <h5><b>1-й месяц</b></h5>
                         <p>первые <br>
 существенные <br>
 результаты</p>
                     </div>
                     <div class="column is-6 margin-b40"></div>
-                    <div class="column is-6 margin-b40">
+                    <div class="hide column is-6 margin-b40">
                         <h5><b>4-я неделя</b></h5>
                         <p>Сертификат <br>
 о завершении курса</p>
                     </div>
                     <div class="column is-4 margin-b40"></div>
-                    <div class="column is-8 margin-b40">
+                    <div class="hide column is-8 margin-b40">
                         <h5><b>3-я неделя</b></h5>
                         <p>начало внедрения <br>
 карьерного плана </p>
                     </div>
                     <div class="column is-2 margin-b40"></div>
-                    <div class="column is-10 margin-b40">
+                    <div class="hide column is-10 margin-b40">
                         <h5><b>2-я неделя</b></h5>
                         <p> четкое понимание и осознание <br>
 как и куда вы хотите прийти
                    </p>
                     </div>
                     <div class="column is-1 margin-b40"></div>
-                    <div class="column is-7 margin-b40">
+                    <div class="hide column is-6 margin-b40">
                         <h5><b>1-я неделя</b></h5>
                         <p> проведете детальный самоанализ
                             <br> и анализ рынка для определения
                             <br> возможностей </p>
                     </div>
-                    <div class="column is-4 has-text-left">
-                        <h5 class="margin-b20 fw600">
+                    <div class="column is-5 has-text-left">
+                        <h5 class="hide margin-b20 fw600">
                   У каждого из нас своя точка «А» и точка «Б». <br>
 Поэтому, не можем пообещать вам слишком <br>
 много, но гарантируем, что вы получите <br>
 ощутимый результат!
-              </h5> <a class="button button-custom button-custom-sc5 orange-bg white-text fw600">Начать обучение</a>
+              </h5> 
+                 <a href="#reg-form" data-scroll class="button button-custom button-custom-sc5 orange-bg white-text fw600 hide">Начать обучение</a>
                   </div>
                 
             </div></div>
         </section>
         <!--______________________________SC END______________________________________-->
-        <section class="hide section black-text" id="section6">
+        <section class="section black-text" id="section6">
             <div class="container">
                 <div class="columns is-multiline">
                     <div class="column is-12 has-text-centered hide">
@@ -703,7 +742,7 @@
              </h1> </div>
                 </div>
                 <div class="columns is-multiline">
-                    <div class="column is-3 has-text-right margin-b20 hide"> <img src="images/1-aigun.png" alt=""> </div>
+                    <div class="column is-3 has-text-right margin-b20 hide"> <img src="./images/1-aigun.png" alt=""> </div>
                     <div class="column is-3 has-text-left">
                         <p class="fs13 hide"> <span class="fs16">
                   <b>
@@ -714,7 +753,7 @@
                             <br> персонала и корпоративной
                             <br> культуре, аэропорт «Домодедово» </p>
                     </div>
-                    <div class="column is-2 has-text-right margin-b20 hide"> <img src="images/4-sveta.png" alt=""> </div>
+                    <div class="column is-2 has-text-right margin-b20 hide"> <img src="./images/4-sveta.png" alt=""> </div>
                     <div class="column is-4 has-text-left">
                         <p class="fs13 hide"> <span class="fs16">
                   <b>
@@ -724,7 +763,7 @@
                             <br> Основатель и руководитель
                             <br> «Карьера 21 век» </p>
                     </div>
-                    <div class="column is-3 has-text-right margin-b20 hide"> <img src="images/2-kostik.png" alt=""> </div>
+                    <div class="column is-3 has-text-right margin-b20 hide"> <img src="./images/2-kostik.png" alt=""> </div>
                     <div class="column is-3 has-text-left">
                         <p class="fs13 hide"> <span class="fs16">
                   <b>
@@ -734,7 +773,7 @@
                             <br> Основатель и генеральный директор,
                             <br> Support Partners Executive Search </p>
                     </div>
-                    <div class="hide column is-2 has-text-right margin-b20"> <img src="images/5-valya.png" alt=""> </div>
+                    <div class="hide column is-2 has-text-right margin-b20"> <img src="./images/5-valya.png" alt=""> </div>
                     <div class="column is-4 has-text-left hide">
                         <p class="fs13 hide"> <span class="fs16">
                   <b>
@@ -744,7 +783,7 @@
                             <br> Сертифицированный
                             <br> карьерный коуч </p>
                     </div>
-                    <div class="hide column is-3 has-text-right margin-b20"> <img src="images/3-limon.png" alt=""> </div>
+                    <div class="hide column is-3 has-text-right margin-b20"> <img src="./images/3-limon.png" alt=""> </div>
                     <div class="hide column is-3 has-text-left">
                         <p class="fs13"> <span class="fs16">
                   <b>
@@ -756,7 +795,7 @@
                             <br> и преподаватель в ведущих
                             <br> бизнес-школах </p>
                     </div>
-                    <div class="hide column is-2 has-text-right margin-b20"> <img src="images/6-sveta.png" alt=""> </div>
+                    <div class="hide column is-2 has-text-right margin-b20"> <img src="./images/6-sveta.png" alt=""> </div>
                     <div class="hide column is-4 has-text-left">
                         <p class="fs13"> <span class="fs16">
                   <b>
@@ -769,12 +808,12 @@
                     </div>
                 </div>
                 <div class="columns flex-just-center is-multiline">
-                    <div class="column is-12-mobile is-12-tablet  is-5-desktop has-text-right margin-b20"> <img src="images/yoda.png" alt="">
+                    <div class="column is-12-mobile is-12-tablet  is-5-desktop has-text-right margin-b20 hide"> <img src="./images/yoda.png" alt="">
                        
                     </div>
                     <div class="column is-12-mobile is-12-tablet is-6-desktop has-text-left">
-                        <p class="fs15" style="line-height: 24px"> <span class="fs24 margin-b20">
-                  <b style="line-height: 37px;">
+                        <p class="fs15 hide" style="line-height: 24px"> <span class="fs24 margin-b20">
+                  <b style="line-height: 37px;" class="hide">
                     Любой может стать любым. <br>
 Вопрос только в Вас самих!
                   </b>
@@ -793,7 +832,7 @@
                             <br> рывок в своей карьере и в жизни! </p>
                             <div>&nbsp;</div>
                             <div class="columns">
-                                <div class="column is-9"><div class="has-text-right">
+                                <div class="column is-9 hide"><div class="has-text-right">
                          <p> <span class="fs24" style="margin-right: -4px;">Исаков Денис</span>
                             <br> <span class="fs14">Ректор City Business School</span> </p>
                     </div></div>
@@ -813,29 +852,51 @@
                             <h1 class="hide fw700 orange-text-main margin-b40" style="padding-right: 59px;">Пройти курс “Управление <br>
 карьерной стратегией» </h1>
                             <div>
-                                <h2 class="hide fw300">   Старт курса: 1 февраля <span><img src="images/line-arrow.png" alt="" class="arrow-orange"></span></h2>
+                                <h2 class="hide fw300">   Старт курса: 1 февраля <span><img src="./images/line-arrow.png" alt="" class="arrow-orange"></span></h2>
                                 <p class="sc7-p" style="height: 115px;"> &nbsp; </p> 
-                                <img src="images/x-wing.png" alt="" style="position: absolute;
+                                <img src="./images/x-wing.png" alt="" style="position: absolute;
     width: 95%;
     left: -40px;
     bottom: -47px;" class="is-hidden-mobile"> </div>
                         </div>
                     </div>
                     <div class="column is-5-desktop" style="padding-right:0; padding-left:0;" id="reg-form">
-                        <div class=" hide custom-form has-text-centered white-bg" >
-                            <h2 class="black-text fw600 margin-b20">Регистрация на курс</h2>
-                            <p class="control">
-                                <input class="input is-large" type="text" placeholder="Имя"> </p>
-                            <p class="control">
-                                <input class="input is-large" type="text" placeholder="Телефон"> </p>
-                            <p class="control">
-                                <input class="input is-large" type="text" placeholder="E-mail"> </p>
-                            <p class="control">
-                                <br> </p>
-                            <p class="control">
-                                <input class="input is-large" type="text" placeholder="Введите промокод"> </p>
-                            <h6 class="gray-text"><b>Стоимость курса 19 900 руб.</b></h6>
-                            <h6 class="black-text margin-b20"><strong>По промо-коду 0 руб.</strong></h6> <a class="button button-custom is-medium orange-bg white-text">Начать обучение</a> </div>
+                     
+   <form class="hide custom-form-3 custom-form has-text-centered white-bg" onsubmit="showflip(this);">
+                                   <div class="success-form-3 success-form has-text-left">
+                                   
+                                     <img src="./images/sc7-stars.png" alt="" class="sc7-stars">
+                                    <div class="success-content">  
+                                     <img src="./images/star.png" alt="" class="sc5-star1 sc5-star">
+                                      <img src="./images/star.png" alt="" class="sc5-star2 sc5-star"> 
+                                      <img src="./images/star.png" alt="" class="sc5-star3 sc5-star">  
+                                                                          
+                                      
+                                       <h1 class="fs30 fw700 margin-b20">Спасибо, ваша <br> заявка принята!</h1>
+                                       <h2 class="margin-b40">Проверьте e-mail <br>
+                                       и подтвердите вашу <br>
+                                       заявку</h2>
+               <div class="has-text-centered"><img src="./images/envelope.png" alt=""></div>                
+                               </div>
+                                
+                                   </div>
+                                    <h2 class="black-text fw600 margin-b20">Регистрация на курс</h2>
+                                    <p class="control">
+                                        <input name="mane" class="input is-large" type="text" placeholder="Имя" required> </p>
+                                    <p class="control">
+                                        <input class="input is-large" type="text" placeholder="Телефон" required> </p>
+                                    <p class="control">
+                                        <input class="input is-large" type="email" id="email" name="email" required placeholder="E-mail"> </p>
+                                    <p class="control">
+                                        <br> </p>
+                                    <p class="control">
+                                        <input class="input is-large" type="text" placeholder="Введите промокод"> </p>
+                                    <h6 class="gray-text"><b>Стоимость курса 19 900 руб.</b></h6>
+                                    <h6 class="black-text margin-b20"><strong>По промо-коду 0 руб.</strong></h6>
+                                    <p class="control"> 
+                                        <button type="submit" class="button button-custom is-medium orange-bg white-text"  id="startbutton">Начать обучение</button></p></form>
+
+                       
                     </div>
                 </div>
             </div>
@@ -852,10 +913,10 @@
 деятельность № 035328
                  </h5> </div>
                     <div class="column flex-just-center">
-                        <a href="" class="soc-icon"><img src="images/fb.png" alt=""></a>
-                        <a href="" class="soc-icon"><img src="images/vk.png" alt=""></a>
-                        <a href="" class="soc-icon"><img src="images/tw.png" alt=""></a>
-                        <a href="" class="soc-icon"><img src="images/ok.png" alt=""></a>
+                        <a href="" class="soc-icon"><img src="./images/fb.png" alt=""></a>
+                        <a href="" class="soc-icon"><img src="./images/vk.png" alt=""></a>
+                        <a href="" class="soc-icon"><img src="./images/tw.png" alt=""></a>
+                        <a href="" class="soc-icon"><img src="./images/ok.png" alt=""></a>
                     </div>
                 </div>
             </div>
@@ -863,32 +924,25 @@
  
 
         </footer>
-
+    
         <script src="js/vex.js"></script>
         <script src="js/scrollreveal.min.js"></script>
         <script src="js/smooth-scroll.min.js"></script>
-        
-        
         <script>
             smoothScroll.init();
         </script>
-        
-        
-        
-        
         <script>
-        window.sr = ScrollReveal({ duration: 500, viewFactor: 0.18, origin: 'top', reset: true });
+        window.sr = ScrollReveal({ duration: 200, viewFactor: 0.6, origin: 'top', reset: true });
             sr.reveal('.hide');
-            sr.reveal('.hide-sc1', 100);
-             sr.reveal('.hide-noreset', {reset: false});
+            sr.reveal('.hide-sc1', {duration: 100}, 60);
+             sr.reveal('.hide-noreset', {reset: false, duration: 500,});
         </script>
-        
-        
-
-
-<script>
-var p = document.getElementById('sc5-ship-whole')
+        <script>
+    var p = document.getElementById('sc5-ship-whole')
 var lastX,lastY,cursorX,cursorY;
+    var mq = window.matchMedia( "(min-width: 760px)" );
+    
+    if (mq.matches) { 
 
 window.addEventListener('mousemove', function(e){
     cursorX = e.pageX;
@@ -901,9 +955,54 @@ setInterval(function(){
     lastX = p.offsetLeft
     
 
-},60)
+},200)
+
+    } else {
+}
+</script>
+<script>
+     window.onload = function() {
+    document.getElementById("showcert").onclick = function fun() {
+        f1();
+    }
+}       
+     function f1() {
+         vex.open({
+    unsafeContent: [
+        '<img src="./images/cert-big.jpg" alt="">'
+    ].join('')
+})
+}
 </script>
         
+<script>
+
+    
+    
+    var forms = document.querySelectorAll(".success-form");
+    
+    [].forEach.call(forms, function (form) {
+        form.addEventListener('submit', function(e){
+           e.preventDefault(); 
+            showflip();
+        })
+    });
+
+
+
+
+function showflip(form){
+   var forms = document.querySelectorAll(".success-form");
+    
+    [].forEach.call(forms, function (form) {
+        form.classList.add("active")
+    });
+}
+                          
+
+</script>
+        
+
         
         
         
