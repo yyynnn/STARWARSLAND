@@ -1009,7 +1009,7 @@ left: 41%;
 }
 #section5 .column{
     position: relative;
-    z-index: 1;
+    z-index: 5;
     
 }
 .sc5-star{
@@ -1068,7 +1068,7 @@ left: 64%;
 }
 
 #sc5-ship-wrap{
-z-index: 99;
+z-index: 3;
     -webkit-transform: translateY(253%) translateX(-5%) scale(1) rotate(-42deg);
 
     transform: translateY(266%) translateX(-5%) scale(1) rotate(-42deg);
@@ -1085,8 +1085,6 @@ z-index: 99;
     width: 100px;
     height: 100px;
     position: absolute;
-    -webkit-transition: 700ms ease-out;
-    transition: 700ms ease-out;
     z-index: 7;
 
 }
@@ -1104,8 +1102,6 @@ z-index: 99;
     transform: translateY(-50%) translateX(-50%);
     left: 23%;
     top: 39%;
-    -webkit-transition: 15ms ease;
-    transition: 15ms ease;
 }
 
 .sc5-cert{
@@ -1206,31 +1202,18 @@ left: 40%;
 
 
 
-@-webkit-keyframes shipFlyMob {
-    
-    0% { 
-      -webkit-transform: translate3d(-130px,0px,0px) rotate(35deg); 
-      transform: translate3d(-130px,0px,0px) rotate(35deg);
-    }
-    100% {   
-
-
-      -webkit-transform: translate3d(900px,0px,0px) rotate(35deg);   
-      transform: translate3d(900px,0px,0px) rotate(35deg);
-    }
-}
 
 
 
 @keyframes shipFlyMob {
     
     0% { 
-      -webkit-transform: translate3d(-130px,0px,0px) rotate(35deg); 
-      transform: translate3d(-130px,0px,0px) rotate(35deg);
+      -webkit-transform: translate3d(-130px,0px,0px) rotate(0deg); 
+      transform: translate3d(-130px,0px,0px) rotate(0deg);
     }
     100% {   
-      -webkit-transform: translate3d(850px,0px,0px) rotate(35deg);   
-      transform: translate3d(850px,0px,0px) rotate(35deg);
+      -webkit-transform: translate3d(850px,0px,0px) rotate(0deg);   
+      transform: translate3d(850px,0px,0px) rotate(0deg);
     }
 }
 
@@ -1636,7 +1619,7 @@ display: none
 @media (max-width: 468px){
 #laptop {
     position: relative;
-    left: 0px;
+    left: 0;
 }
         .sc3-images{
         width: 100%;
@@ -1646,6 +1629,15 @@ display: none
 }
 }
 
+@media (max-width: 340px){
+
+    #sc3-icon-2-stars {
+        top: -13px;   
+    }
+    #sc3-icon-2 {
+    top: -215px;
+    }
+}
 
 
 
@@ -3636,16 +3628,7 @@ display: none
       transform: translateX(-55vh) translateY(117vh) translateZ(0);
 }
 
-@-webkit-keyframes twinkle {
-  0%, 80%, 100% {
-    opacity: 0.7;
-    box-shadow: 0 0 0 #fff, 0 0 0 #fff;
-  }
-  95% {
-    opacity: 1;
-    box-shadow: 0 0 2px #fff, 0 0 4px #fff;
-  }
-}
+
 @keyframes twinkle {
   0%, 80%, 100% {
     opacity: 0.7;

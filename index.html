@@ -66,7 +66,7 @@
                     <div class="tile is-parent">
                         <article class="tile is-child">
                             <div class="">
-                                <form class="hide-sc1 custom-form-1 custom-form has-text-centered white-bg"  onsubmit="showflip()">
+                                <form class="hide-sc1 custom-form-1 custom-form has-text-centered white-bg"  onsubmit="showflip(this)">
                                    <div class="success-form-1 success-form has-text-left">
                                    
                                      <img src="./images/sc7-stars.png" alt="" class="sc7-stars">
@@ -98,7 +98,7 @@
                                     <h6 class="gray-text"><b>Стоимость курса 19 900 руб.</b></h6>
                                     <h6 class="black-text margin-b20"><strong>По промо-коду 0 руб.</strong></h6>
                                     <p class="control"> 
-                                    <button type="submit" class="button button-custom is-medium orange-bg white-text">Начать обучение</button></p>
+                                    <button type="submit" class="button button-custom is-medium orange-bg white-text" onclick="ga('send', 'event', 'second', 'regbutton');yaCounter1207553.reachGoal('regbutton');">Начать обучение</button></p>
                                 </form>
                             </div>
                         </article>
@@ -179,15 +179,15 @@
                         <h1 style="font-size:30px;" class="fw700">Как устроен курс? </h1>
                         <h5>Вы научитесь технологиям стремительного взлета на карьерный Олимп.</h5> </div>
                 </div>
-                <div class=" hide columns margin-b120">
-                    <div class="column is-4-desktop has-text-centered">
+                <div class="columns margin-b120">
+                    <div class="hide column is-4-desktop has-text-centered">
                         <div class="sc3-images" style="height: 220px;margin: auto;"> 
                         <img src="./images/sc3-icon-1-gsaber.png" alt="sc3-icon-1-gsaber" id="sc3-icon-1-gsaber"> 
                         <img src="./images/sc3-icon-1-rsaber.png" alt="sc3-icon-1-rsaber" id="sc3-icon-1-rsaber"> </div>
                     </div>
                     <div class="column is-6-desktop">
-                        <h2 class=" fw700">Самоопределение</h2>
-                        <h5 class=" fw300">
+                        <h2 class=" fw700 hide ">Самоопределение</h2>
+                        <h5 class=" fw300 hide ">
                   Вы сможете разобраться в себе. Поймете, на какой <br>
                   ступени карьеры вы находитесь, разберетесь <br>
                   в различных типах и уровнях карьер. <br>
@@ -195,26 +195,26 @@
                   ресурсы и ценности и научитесь их правильно использовать.
               </h5> </div>
                 </div>
-                <div class=" hide columns margin-b120">
+                <div class="  columns margin-b120">
                     <div class="column is-6-desktop has-text-centered">
-                        <div class="sc3-images" style="height: 225px;margin: auto;"> <img src="./images/sc3-icon-2-stars.png" alt="sc3-icon-2-stars" id="sc3-icon-2-stars"> <img src="./images/sc3-icon-2.png" alt="sc3-icon-2" id="sc3-icon-2"> <img src="./images/sc3-icon-2-black.png" alt="sc3-icon-2" id="sc3-icon-2-black"> </div>
+                        <div class="hide sc3-images" style="height: 225px;margin: auto;"> <img src="./images/sc3-icon-2-stars.png" alt="sc3-icon-2-stars" id="sc3-icon-2-stars"> <img src="./images/sc3-icon-2.png" alt="sc3-icon-2" id="sc3-icon-2"> <img src="./images/sc3-icon-2-black.png" alt="sc3-icon-2" id="sc3-icon-2-black"> </div>
                     </div>
                     <div class="column is-6-desktop">
-                        <h2 class=" fw700 pad">Анализ возможностей <br>и стратегия роста</h2>
-                        <h5 class=" fw300">
+                        <h2 class=" fw700 padhide ">Анализ возможностей <br>и стратегия роста</h2>
+                        <h5 class=" fw300 hide ">
                  Вы проанализируйте варианты своего развития <br>
                  и определите начальную точку – «А» и желаемую <br>
                  точку – «Б».  Вы снимете розовые очки и поймете, <br>
                  какие действия дают реальный результат!
               </h5> </div>
                 </div>
-                <div class="hide columns margin-b120">
+                <div class="columns margin-b120">
                     <div class="column is-6-desktop">
-                        <div class="sc3-images" style="height: 267px;width: 300px;margin: auto;"> <img src="./images/sc3-icon-3-ship.png" alt="sc3-icon-3-ship" id="sc3-icon-3-ship"> <img src="./images/sc3-icon-3-planet.png" alt="sc3-icon-3-planet" id="sc3-icon-3-planet"> </div>
+                        <div class="hide sc3-images" style="height: 267px;width: 300px;margin: auto;"> <img src="./images/sc3-icon-3-ship.png" alt="sc3-icon-3-ship" id="sc3-icon-3-ship"> <img src="./images/sc3-icon-3-planet.png" alt="sc3-icon-3-planet" id="sc3-icon-3-planet"> </div>
                     </div>
                     <div class="column is-6-desktop flex-align-left">
-                        <h2 class=" fw700">Разработка карьерного плана</h2>
-                        <h5 class=" fw300">
+                        <h2 class=" fw700 hide">Разработка карьерного плана</h2>
+                        <h5 class=" fw300 hide">
 Вы определите ключевые компетенции <br>
 и промежуточные цели, которые приведут <br>
 вас к желаемой точке «Б» и составите свой индивидуальный план развития. <br>
@@ -224,11 +224,11 @@
                 </div>
                 <div class="hide columns is-multiline">
                     <div class="column is-offset-2-desktop is-4-desktop has-text-centered">
-                        <div class="sc3-images" style="height: 267px;margin: auto;"> <img src="./images/sc3-icon-4-man.png" alt="sc3-icon-4-man" id="sc3-icon-4-man"> <img src="./images/sc3-icon-4-rocks.png" alt="sc3-icon-1-rsaber" id="sc3-icon-4-rocks"> </div>
+                        <div class="hide sc3-images" style="height: 267px;margin: auto;"> <img src="./images/sc3-icon-4-man.png" alt="sc3-icon-4-man" id="sc3-icon-4-man"> <img src="./images/sc3-icon-4-rocks.png" alt="sc3-icon-1-rsaber" id="sc3-icon-4-rocks"> </div>
                     </div>
                     <div class="column is-6-desktop flex-align-left">
-                        <h2 class=" fw700">Реализация и подведение итогов</h2>
-                        <h5 class=" fw300">
+                        <h2 class=" fw700hide ">Реализация и подведение итогов</h2>
+                        <h5 class=" fw300hide ">
                  Вы научитесь не просто ставить планировать, <br>
                  а достигать результатов и отслеживать свой <br>
                  прогресс по достижению целей!
@@ -280,7 +280,7 @@
                                     <h6 class="gray-text"><b>Стоимость курса 19 900 руб.</b></h6>
                                     <h6 class="black-text margin-b20"><strong>По промо-коду 0 руб.</strong></h6>
                                     <p class="control"> 
-                                        <button type="submit" class="button button-custom is-medium orange-bg white-text">Начать обучение</button></p></form>
+                                        <button type="submit" class="button button-custom is-medium orange-bg white-text" onclick="ga('send', 'event', 'second', 'regbutton');yaCounter1207553.reachGoal('regbutton');">Начать обучение</button></p></form>
                     </div>
                 </div>
             </div>
@@ -350,6 +350,7 @@
         </section>
         <!--______________________________SC END______________________________________-->
         <section class="section white-text section5" id="section5">
+              <img src="./images/path.png" alt="" id="sc5-path">
                <div id="sc5-ship-wrap">  
                <div id="sc5shipwhole">
                <img src="./images/sc5-ship.png" alt="sc5-ship" id="sc5-ship">
@@ -357,7 +358,7 @@
                </div>
                
                </div>
-                <div class="hide-noreset stars">
+            <div class="hide-noreset stars">
   <div class="container">
     <div class="star"></div>
   </div>
@@ -671,7 +672,7 @@
        
                     
              
-                   <img src="./images/path.png" alt="" id="sc5-path">
+                   
 
                   
                     <div class="column is-12 padding-t40 has-text-centered">
@@ -893,7 +894,7 @@
                                     <h6 class="gray-text"><b>Стоимость курса 19 900 руб.</b></h6>
                                     <h6 class="black-text margin-b20"><strong>По промо-коду 0 руб.</strong></h6>
                                     <p class="control"> 
-                                        <button type="submit" class="button button-custom is-medium orange-bg white-text"  id="startbutton">Начать обучение</button></p></form>
+                                        <button type="submit" class="button button-custom is-medium orange-bg white-text"  id="startbutton" onclick="ga('send', 'event', 'second', 'regbutton');yaCounter1207553.reachGoal('regbutton');">Начать обучение</button></p></form>
 
                        
                     </div>
@@ -930,10 +931,16 @@
             smoothScroll.init();
         </script>
 <script>
-        window.sr = ScrollReveal({ duration: 200, viewFactor: 0.6, origin: 'top', reset: true });
+    var mq = window.matchMedia( "(min-width: 760px)" );
+    
+    if (mq.matches) {
+        window.sr = ScrollReveal({ duration: 400, viewFactor: 0.3, origin: 'top', reset: true });
             sr.reveal('.hide');
             sr.reveal('.hide-sc1', {duration: 100}, 60);
              sr.reveal('.hide-noreset', {reset: false, duration: 500,});
+        
+    } else {
+}
         </script>       
 <script>
 
@@ -941,49 +948,27 @@
     
     if (mq.matches) { 
         
-        var el               = sc5shipwhole,
-		startPosition    = 0,     // start position mousedown event
-		currentPosition  = 0,     // count current translateX value
-    distancePosition = 0,     // count distance between "down" & "move" event
-    isMouseDown      = true, // check if mouse is down or not
-    needForRAF       = true;  // to prevent redundant rAF calls
-    
-function mouseDown(e) {
-	e.preventDefault(); // reset default behavior
-  isMouseDown     = true;
-  currentPosition = getTranslateX(); // get current translateX value
-  startPosition   = e.clientX;       // get position X
-}    
-
-function mouseMove(e) {
+        var el               = sc5shipwhole;
+    function mouseMove(e) {
 	e.preventDefault();
-  distancePosition = (e.clientX - startPosition) + currentPosition - 0; // count it!  
-  if (needForRAF && isMouseDown) {
-    needForRAF = false;            // no need to call rAF up until next frame
-    requestAnimationFrame(update); // request 60fps animation
-  }; 
+  distancePosition = (e.clientX - 0) + 60; // count it!  
+    requestAnimationFrame(update);
 }
+        
 
-function mouseUp(e) {
-	e.preventDefault();
-	isMouseDown = true; // reset mouse is down boolean
-}
 
+        
 function getTranslateX() {
-var translateX = parseInt(getComputedStyle(el, null).getPropertyValue("transform").split(",")[4]);
-
+var translateX = parseInt(getComputedStyle(el, null).getPropertyValue("transform").split(",")[0]);
 return translateX; // get translateX value
 
 }
-
 function update() {
-    needForRAF = true; // rAF consumes the movement instruction a new one can come
     el.style.transform = "translateX(" + distancePosition + "px)";// move it!
 }
     
-el.addEventListener("mousedown", mouseDown);
+
 document.addEventListener("mousemove", mouseMove);
-document.addEventListener("mouseup", mouseUp);
 
     } else {
 }
@@ -1030,6 +1015,30 @@ function showflip(form){
                           
 
 </script>
+
+       <!-- GA -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-49356411-8', 'auto', {
+        'allowLinker': true
+  });
+  ga('require', 'linker');
+  ga('linker:autoLink', ['cdo.e-mba.ru', 'm-mba.ru', 'open-mba.ru', 'new.e-mba.ru', 'up-up-up.ru'], false, true);
+  ga(function(tracker) {
+   var clientId = tracker.get('clientId'); // get client id from  Google Analytics
+   document.cookie = "_ga_cid=" + clientId + "; path=/"; // save it to cookie _ga_cid
+   ga('set', 'dimension1', clientId); //запись clientId для каждого пользователя
+  });
+  ga('send', 'pageview');
+</script>
+<!-- /GA -->
+<!-- Yandex.Metrika counter --> 
+<script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter41370654 = new Ya.Metrika({ id:41370654, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/41370654" style="position:absolute; left:-9999px;" alt="" /></div></noscript> 
+<!-- /Yandex.Metrika counter -->
+
         
 
         
