@@ -6,10 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
     <title>Landing Jedi</title>
-    <link href="css/bulma.css" rel="stylesheet">
+    <link href="./css/bulma.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&amp;subset=cyrillic" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
-<link rel="stylesheet" href="css/starsbg.css">
+    <link href="./css/styles.css" rel="stylesheet">
     </head>
 
 <body>
@@ -67,7 +66,7 @@
                     <div class="tile is-parent">
                         <article class="tile is-child">
                             <div class="">
-                                <form class="hide-sc1 custom-form-1 custom-form has-text-centered white-bg"  onsubmit="showflip(this);">
+                                <form class="hide-sc1 custom-form-1 custom-form has-text-centered white-bg"  onsubmit="showflip()">
                                    <div class="success-form-1 success-form has-text-left">
                                    
                                      <img src="./images/sc7-stars.png" alt="" class="sc7-stars">
@@ -249,7 +248,7 @@
                         </div>
                     </div>
                     <div class="column" style="padding-right:0; padding-left:0;">
-                       <form class="hide custom-form-2 custom-form has-text-centered white-bg">
+                       <form class="hide custom-form-2 custom-form has-text-centered white-bg" onsubmit="showflip(this);">
                                    <div class="success-form-2 success-form has-text-left">
                                    
                                      <img src="./images/sc7-stars.png" alt="" class="sc7-stars">
@@ -352,7 +351,7 @@
         <!--______________________________SC END______________________________________-->
         <section class="section white-text section5" id="section5">
                <div id="sc5-ship-wrap">  
-               <div id="sc5-ship-whole">
+               <div id="sc5shipwhole">
                <img src="./images/sc5-ship.png" alt="sc5-ship" id="sc5-ship">
                <img src="./images/sc5-ship-plasma.png" alt="sc5-ship-plasma" id="sc5-ship-plasma">
                </div>
@@ -925,37 +924,66 @@
 
         </footer>
     
-        <script src="js/vex.js"></script>
-        <script src="js/scrollreveal.min.js"></script>
-        <script src="js/smooth-scroll.min.js"></script>
-        <script>
+        <script src="js/main.min.js"></script>
+        
+<script>
             smoothScroll.init();
         </script>
-        <script>
+<script>
         window.sr = ScrollReveal({ duration: 200, viewFactor: 0.6, origin: 'top', reset: true });
             sr.reveal('.hide');
             sr.reveal('.hide-sc1', {duration: 100}, 60);
              sr.reveal('.hide-noreset', {reset: false, duration: 500,});
-        </script>
-        <script>
-    var p = document.getElementById('sc5-ship-whole')
-var lastX,lastY,cursorX,cursorY;
+        </script>       
+<script>
+
     var mq = window.matchMedia( "(min-width: 760px)" );
     
     if (mq.matches) { 
-
-window.addEventListener('mousemove', function(e){
-    cursorX = e.pageX;
-})
-setInterval(function(){
-    var newX = (p.offsetLeft + (cursorX - lastX))*1.1 - 60
-
-    p.style.left = newX+'px'
+        
+        var el               = sc5shipwhole,
+		startPosition    = 0,     // start position mousedown event
+		currentPosition  = 0,     // count current translateX value
+    distancePosition = 0,     // count distance between "down" & "move" event
+    isMouseDown      = true, // check if mouse is down or not
+    needForRAF       = true;  // to prevent redundant rAF calls
     
-    lastX = p.offsetLeft
-    
+function mouseDown(e) {
+	e.preventDefault(); // reset default behavior
+  isMouseDown     = true;
+  currentPosition = getTranslateX(); // get current translateX value
+  startPosition   = e.clientX;       // get position X
+}    
 
-},200)
+function mouseMove(e) {
+	e.preventDefault();
+  distancePosition = (e.clientX - startPosition) + currentPosition - 0; // count it!  
+  if (needForRAF && isMouseDown) {
+    needForRAF = false;            // no need to call rAF up until next frame
+    requestAnimationFrame(update); // request 60fps animation
+  }; 
+}
+
+function mouseUp(e) {
+	e.preventDefault();
+	isMouseDown = true; // reset mouse is down boolean
+}
+
+function getTranslateX() {
+var translateX = parseInt(getComputedStyle(el, null).getPropertyValue("transform").split(",")[4]);
+
+return translateX; // get translateX value
+
+}
+
+function update() {
+    needForRAF = true; // rAF consumes the movement instruction a new one can come
+    el.style.transform = "translateX(" + distancePosition + "px)";// move it!
+}
+    
+el.addEventListener("mousedown", mouseDown);
+document.addEventListener("mousemove", mouseMove);
+document.addEventListener("mouseup", mouseUp);
 
     } else {
 }
@@ -973,8 +1001,7 @@ setInterval(function(){
     ].join('')
 })
 }
-</script>
-        
+</script>       
 <script>
 
     
@@ -983,8 +1010,10 @@ setInterval(function(){
     
     [].forEach.call(forms, function (form) {
         form.addEventListener('submit', function(e){
-           e.preventDefault(); 
+           
             showflip();
+            e.preventDefault(); 
+            
         })
     });
 
