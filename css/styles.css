@@ -88,8 +88,9 @@ input:active{
 /*NATIVE CLASSES----------------------------------------------------------------------------------------------------------------*/
 
 .button.is-medium {
-    padding-left: 119px!important;
-    padding-right: 119px!important;
+    text-align: center!important;
+    padding-left: 80px!important;
+    padding-right: 80px!important;
 }
 
 .section{
