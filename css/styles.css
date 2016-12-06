@@ -566,7 +566,7 @@ nav .Aligner  {
 }
 
 .text-wrap:after { content: ''; clear: both; visibility: hidden; }
-.text-wrap img { float: left; margin-right: 10px; }
+.text-wrap img { float: left; margin-right: 10px; height: 22px}
 .text-wrap p   { overflow: hidden; text-align: left!important; }
 
 
@@ -970,6 +970,10 @@ html.vex-open {
 #section5 {background-color: #000e21;position: relative; z-index: 1}
 
 #section6 {padding-top: 70px;    line-height: 22px;}
+
+#section6 h1{
+        line-height: 40px;
+}
 
 #section7 {}
 
