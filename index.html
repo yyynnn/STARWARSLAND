@@ -6,8 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
     <title>Landing Jedi</title>
-    <link href="./css/bulma.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&amp;subset=cyrillic" rel="stylesheet">
     <link href="./css/styles.css" rel="stylesheet">
     </head>
 
@@ -321,55 +319,7 @@
 
           </section>
        
-    
-        <script src="js/main.min.js"></script>
-        
-
-<script>
-    var mq = window.matchMedia( "(min-width: 760px)" );
-    
-    if (mq.matches) {
-        window.sr = ScrollReveal({ duration: 400, viewFactor: 0.3, origin: 'top', reset: true });
-            sr.reveal('.hide');
-            sr.reveal('.hide-sc1', {duration: 100}, 60);
-             sr.reveal('.hide-noreset', {reset: false, duration: 500,});
-        
-    } else {
-}
-        </script>       
-<script>
-
-    var mq = window.matchMedia( "(min-width: 760px)" );
-    
-    if (mq.matches) { 
-        
-        var el               = sc5shipwhole;
-    function mouseMove(e) {
-	e.preventDefault();
-  distancePosition = (e.clientX - 0) + 60; // count it!  
-    requestAnimationFrame(update);
-}
-        
-
-
-        
-function getTranslateX() {
-var translateX = parseInt(getComputedStyle(el, null).getPropertyValue("transform").split(",")[0]);
-return translateX; // get translateX value
-
-}
-function update() {
-    el.style.transform = "translateX(" + distancePosition + "px)";// move it!
-}
-    
-
-document.addEventListener("mousemove", mouseMove);
-
-    } else {
-}
-</script>
-   
-
+       
 
 
 <!--<script>
