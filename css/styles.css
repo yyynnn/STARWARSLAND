@@ -1,16 +1,18 @@
 html{background-color: #fff}
 body, html {
+overflow-y: hidden;
     color: #fff;
     font-family: 'Open Sans', sans-serif;
     -webkit-transition: .3s all ease;
     transition: .3s all ease;
     -webkit-font-smoothing: antialiased;
-/*        height: 8378px;*/
+    height: 8378px;
     background-color: #fff;
     max-height: 100%;
     width: 100%;
-    overflow: auto;
+    overflow: hidden;
     overflow-x: hidden;
+    margin: 0;
 }
 
 body{
@@ -967,7 +969,7 @@ html.vex-open {
 
 #section4 {color: #1b1b1b;}
 
-#section5 {background-color: #000e21;position: relative; z-index: 1}
+#section5 {background-color: #000e21;position: relative; z-index: 1; overflow:hidden; height: 100vh;}
 
 #section6 {padding-top: 70px;    line-height: 22px;}
 
